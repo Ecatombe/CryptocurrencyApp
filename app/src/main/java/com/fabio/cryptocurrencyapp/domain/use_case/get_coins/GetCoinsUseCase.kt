@@ -14,15 +14,6 @@ class GetCoinsUseCase @Inject constructor(
     private val repository: CoinRepository
 ) {
 
-/*
-    Use case should only have one public function, only the major feature that the ViewModel will contain
-    Putting all the use case here is BAD because the purpose of the use case is not fulfilled anymore
-
-    Some people prefer to create a execute function instead, byt we are overriding the invoke function so we
-    can basically call this use case as if it was a function ... which is nice
-    We are using flow so wer can emit multiple values over a period of time and all the type of emit
-    are all the one already planned for the Resource class
- */
 
     operator fun invoke(): Flow<Resource<List<Coin>>> = flow {
         try {
