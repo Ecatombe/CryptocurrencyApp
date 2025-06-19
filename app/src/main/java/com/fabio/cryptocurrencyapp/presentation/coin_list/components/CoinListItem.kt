@@ -55,7 +55,7 @@ fun CoinListItemPreview() {
     CryptocurrencyAppTheme {
         CoinListItem(
             coin = Coin(
-                id = "1",
+                id = "2",
                 isActive = true,
                 name = "BitBat with very long name on top of everything",
                 rank = 1,
